@@ -208,7 +208,6 @@ td, th {
 .beneficios {
     padding: 3em 0;
     background: #888888;
-    
 }
 
 .conteudo-beneficios {
@@ -227,11 +226,22 @@ td, th {
 }
 
 .itens:first-child {
-    font-size: bold;
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "🟊" ;
 }
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
